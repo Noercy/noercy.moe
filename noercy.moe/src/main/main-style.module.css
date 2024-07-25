@@ -1,0 +1,74 @@
+body {
+    width: 800px;
+    margin: auto;
+    margin-top: 10vw;
+}
+h1 {
+    margin: 0;
+}
+
+.Box {  
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sideNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 200px;
+}
+
+.mainContentSize {
+    min-height: 340px;
+}
+
+
+.sideNav,
+.mainContent {
+  transition: opacity 0.5s ease;
+}
+
+.sideNav.hidden,
+.mainContent.hidden {
+  opacity: 0;
+}
+
+.bigText {
+    font-size: 6vw;
+    font-weight: 300;
+    text-align: center;   
+}
+
+.fullScreen {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 2.35 / 1;
+  }
+
+.blinkClass {
+    animation: blink 1.7s steps(1, end) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+canvas {
+    border: 1px solid white;
+    margin: 20px auto;
+  }
+
+
+
