@@ -1,7 +1,7 @@
 import styles from './chat.module.css'
 import { useEffect } from 'react';
 import Nav from '../Nav'; 
-import BottomNav from '../bottomNav';
+
 
 const CollectionScreen: React.FC = () => {
     
@@ -22,9 +22,9 @@ const CollectionScreen: React.FC = () => {
           <div className={styles.collectionMain}>
             <div className={styles.collectionHolder}></div>
           </div>
-          <div className={styles.bottomBar}><BottomNav className={styles.hellNav} onNavClick={function (content: ContentType): void {
+          {/*<div className={styles.bottomBar}><BottomNav className={styles.hellNav} onNavClick={function (content: ContentType): void {
             throw new Error('Function not implemented.');
-          } } /></div>
+          } } /></div> */}
         </div>
     </>
     )

@@ -9,7 +9,6 @@ import AnimatedTitle from './content/animatedTitle'
 import AboutMe from './content/aboutMe'
 
 import { useState, useEffect } from 'react';
-import ChatApp from './content/chat'
 import ChangeLog from './content/changeLog'
 import Collection from './content/collection'
 import CollectionScreen from './content/collectionScreen'

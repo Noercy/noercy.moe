@@ -17,7 +17,7 @@ interface Message {
     const [input, setInput] = useState('');
     const [username, setUsername] = useState('');
     const messagesEndRef = useRef<HTMLDivElement>(null);
-    const messagesRef = useRef<HTMLDivElement>(null);
+    
 
 
     useEffect(() => {
