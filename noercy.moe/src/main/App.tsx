@@ -9,15 +9,16 @@ import AnimatedTitle from './content/animatedTitle'
 import AboutMe from './content/aboutMe'
 
 import { useState, useEffect } from 'react';
+import Projects from './content/projects'
 import ChangeLog from './content/changeLog'
 import Collection from './content/collection'
 import CollectionScreen from './content/collectionScreen'
 
 
 
-
 enum ContentType {
   HOME = 'home',
+  PROJECTS = 'projects',
   COLLECTION = 'collection',
   CHANGELOG = 'changelog',
   ABOUT = 'about',
@@ -53,8 +54,11 @@ function App() {
     switch (currentContent) {
         case ContentType.HOME:
             return <Home />;
+        case ContentType.PROJECTS:
+            return <Projects/>
+        // turn this one into a new page 
         case ContentType.COLLECTION:
-            return <Collection onAnimationClick={animationClick} />;
+            return <Collection />;
         case ContentType.CHANGELOG:
           return <ChangeLog />
         case ContentType.ABOUT:
@@ -64,6 +68,7 @@ function App() {
     }
 };
 
+// change title name animation
 const navClick = (content: ContentType) => {
   if (content !== currentContent) {
     setCurrentContent(content);
@@ -71,6 +76,9 @@ const navClick = (content: ContentType) => {
       case ContentType.HOME:
         setNextTitle('Home');
         break;
+      case ContentType.PROJECTS:
+          setNextTitle('Projects');
+          break;
       case ContentType.COLLECTION:
         setNextTitle('Collection');
         break;
@@ -109,7 +117,6 @@ const navClick = (content: ContentType) => {
         </div>
         
      
-      
       
       
      

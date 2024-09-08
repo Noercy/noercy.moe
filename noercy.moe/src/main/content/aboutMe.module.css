@@ -1,0 +1,14 @@
+.aStyle {
+    color: white;
+    text-decoration: none;
+}
+
+.aStyle:hover{
+    text-decoration: solid;
+    color: skyblue;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}

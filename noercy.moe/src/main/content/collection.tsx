@@ -1,17 +1,16 @@
 
 import styles from './chat.module.css'
+import { Link } from 'react-router-dom';
 
-interface CollectionProps {
-    onAnimationClick: () => void;  
-}
 
-const Collection: React.FC<CollectionProps> = ({ onAnimationClick}) => {
+const Collection = () => {
     
     return (
     <>     
         <div className={styles.changelog}>
             <div> Open the Vault</div> 
-            <div onClick={onAnimationClick}>Open</div>
+            <Link to="/collection">Open link</Link>
+           
         </div>
     </>
     )
