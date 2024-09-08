@@ -29,7 +29,7 @@ function App() {
   const [title, setTitle] = useState<string>('Home');
   const [nextTitle, setNextTitle] = useState<string>('');
   const [isAnimating, setIsAnimating] = useState(false);
-  const [showNewComponent, setShowNewComponent] = useState(false);
+  const [showNewComponent] = useState(false);
 
 
 
