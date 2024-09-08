@@ -32,14 +32,6 @@ function App() {
   const [showNewComponent, setShowNewComponent] = useState(false);
 
 
-  const animationClick = () => {
-    console.log('button is pressed')
-    setIsAnimating(true);
-    setTimeout(() => {
-      setShowNewComponent(true);
-    }, 500);
-  }
-
 
   useEffect(() => {
     if (isAnimating) {

@@ -1,4 +1,3 @@
-import styles from './connectDots.module.css'
 import { useEffect, useState } from 'react';
 
 type Dot = {
