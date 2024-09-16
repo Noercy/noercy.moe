@@ -52,7 +52,7 @@ export const gifWindow: React.FC = () => {
 
     return (
         <div>
-            <div style={{ fontSize: "10px"}} id="fscroller"></div>
+            <div style={{ fontSize: "3px"}} id="fscroller"></div>
         </div>
     ); 
 }

@@ -71,4 +71,21 @@ canvas {
   }
 
 
+.asciiWindow {
+    width: 200px;
+    height: 200px;
+    background-color: #f1f1f1;
+}
 
+.asciiHeader {
+    width: 200px;
+    height: 50px;
+    background-color: #999;
+    text-align: center;
+    line-height: 50px;
+    cursor: move;
+}
+
+.asciiContent {
+    padding: 10px;
+}

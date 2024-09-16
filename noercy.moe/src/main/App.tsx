@@ -4,7 +4,7 @@ import Nav from './Nav'
 import BottomNav from './bottomNav'
 import Home from './content/home'
 import AnimatedTitle from './content/animatedTitle'
-
+import MoveableWindow from './moveableWindow'
 
 import AboutMe from './content/aboutMe'
 
@@ -87,7 +87,7 @@ const navClick = (content: ContentType) => {
 
   return (
     
-     
+      
       <div className={styles.Box}>
         {!showNewComponent ? (
           <>
@@ -108,7 +108,7 @@ const navClick = (content: ContentType) => {
           
         </div>
         
-     
+        <MoveableWindow />
       
       
      
