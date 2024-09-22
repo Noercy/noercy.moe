@@ -1,5 +1,5 @@
 body {
-    width: 800px;
+    width: 900px;
     margin: auto;
     margin-top: 10vw;
 }
@@ -20,8 +20,15 @@ h1 {
     min-width: 200px;
 }
 
+.rightNav {
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
 .mainContentSize {
     min-height: 340px;
+    min-width: 500px;
 }
 
 
@@ -88,4 +95,11 @@ canvas {
 
 .asciiContent {
     padding: 10px;
+}
+
+.siteBadge {
+    margin-top:20px;
+    width:100px;
+    height:40px;
+    
 }

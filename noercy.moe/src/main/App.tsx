@@ -4,7 +4,8 @@ import Nav from './Nav'
 import BottomNav from './bottomNav'
 import Home from './content/home'
 import AnimatedTitle from './content/animatedTitle'
-import MoveableWindow from './moveableWindow'
+// import MoveableWindow from './moveableWindow'
+import LastPlayedSong from './lastPlayedSong'
 
 import AboutMe from './content/aboutMe'
 
@@ -107,8 +108,13 @@ const navClick = (content: ContentType) => {
         
           
         </div>
+          {/* <MoveableWindow />*/} 
+      <div className={styles.rightNav}> 
         
-        <MoveableWindow />
+        <LastPlayedSong />
+        <a href="https://noercy.moe/"><img className={styles.siteBadge} src="/stream.png"></img></a>
+    
+      </div>
       
       
      
