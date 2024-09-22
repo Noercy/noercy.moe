@@ -12,3 +12,14 @@ ul {
     list-style: none;
     padding: 0;
 }
+
+.siteBadge {
+    margin-top:20px;
+    width:100px;
+    height:40px;
+}
+
+.flexBox {
+    display: flex;
+    flex-direction: column;
+}

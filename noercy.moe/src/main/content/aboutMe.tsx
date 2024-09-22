@@ -1,5 +1,6 @@
 import classes from  './aboutMe.module.css'
 
+
 const AboutMe = () => {
     
     return (
@@ -9,6 +10,7 @@ const AboutMe = () => {
             
 
           <br /><br />This is on my cv chat, smile :)
+          
           <br /> <br /><br />- Links -
         </p>
         <ul> 
@@ -23,6 +25,13 @@ const AboutMe = () => {
           <li><a className={`${classes.aStyle}`} href="https://github.com/Noercy">✩ Github</a></li>
 
         </ul>
+
+        <div className={classes.flexBox}> 
+          WIP site badge for the moment
+          <a href="https://noercy.moe/"><img className={classes.siteBadge} src="/stream.png"></img></a>
+        </div>
+       
+
     </>
     )
 }

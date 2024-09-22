@@ -112,7 +112,6 @@ const navClick = (content: ContentType) => {
       <div className={styles.rightNav}> 
         
         <LastPlayedSong />
-        <a href="https://noercy.moe/"><img className={styles.siteBadge} src="/stream.png"></img></a>
     
       </div>
       

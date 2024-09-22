@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react"
+import styles from './main-style.module.css'
 
 interface Track {
     name: string;
@@ -30,7 +31,7 @@ const LastPlayedSong: React.FC = () => {
                 setTrack({
                     name: lastTrack.name,
                     artist: lastTrack.artist['#text'],
-                    imageUrl: lastTrack.image[2]['#text'],
+                    imageUrl: lastTrack.image[3]['#text'],
                     playingNow: isPlayingNow,
                     playedAt: !isPlayingNow ? lastTrack.date?.uts : undefined,
                 });
@@ -72,23 +73,27 @@ const LastPlayedSong: React.FC = () => {
     }
 
     return (
-        <div style={{ display: 'flex', alignItems: 'end', gap: '1rem' }}>
+        
+    <div style={{ display: 'flex', flexDirection:'column', gap: '0.1rem' }}>
+          {!track.playingNow && track.playedAt && (
+                <small style={{ color: '#555' }}>Played {timeAgo(track.playedAt)}</small>
+            )}
+        {track.playingNow && <small style={{ color: '#555' }}>Currently playing</small>}
         <img
           src={track.imageUrl || 'https://via.placeholder.com/64'}
           alt={track.name}
-          width="100"
-          height="100"
+          width="240"
+          height="240"
           style={{ borderRadius: '4px' }}
         />
-         <div>
-        <h3 style={{ margin: 0 }}>{track.name}</h3>
-        <p style={{ margin: 0 }}>by {track.artist}</p>
-        {!track.playingNow && track.playedAt && (
-          <small style={{ color: '#555' }}>Played {timeAgo(track.playedAt)}</small>
-        )}
-        {track.playingNow && <small style={{ color: '#555' }}>Currently playing</small>}
-      </div>
-      </div>
+          
+        <div styl={{margin: 0}}>
+            <div className={styles.songPlayerTitleWrapper}>
+                <h3 className={styles.songPlayerTitle }>{track.name}</h3>
+            </div>
+            <p className={styles.songPlayerArtist}>by {track.artist}</p>
+        </div>    
+    </div>
     )
 }
 
