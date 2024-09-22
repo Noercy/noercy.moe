@@ -87,7 +87,7 @@ const LastPlayedSong: React.FC = () => {
           style={{ borderRadius: '4px' }}
         />
           
-        <div styl={{margin: 0}}>
+        <div style={{margin: 0}}>
             <div className={styles.songPlayerTitleWrapper}>
                 <h3 className={styles.songPlayerTitle }>{track.name}</h3>
             </div>
