@@ -8,7 +8,7 @@ const Collection = () => {
     return (
     <>     
         <div className={styles.changelog}>
-            <div> Open the Vault</div> 
+            <div> Open the Vault WIP</div> 
             <Link to="/collection">Open link</Link>
            
         </div>
