@@ -7,10 +7,10 @@ const Projects = () => {
     return (
     <>     
         <div className={styles.changelog}>
-        <div> 11.06.24</div>
+        
            
-             
-            <Link to="/projects">show all project view</Link>
+             Nothing here at the moment
+            {/*<Link to="/projects">show all project view</Link>*/}
            
         </div>
     </>
