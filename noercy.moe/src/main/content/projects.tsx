@@ -1,7 +1,5 @@
 import styles from './chat.module.css'
 
-import { Link } from 'react-router-dom';
-
 const Projects = () => {
     
     return (
