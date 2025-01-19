@@ -5,7 +5,7 @@ const AboutMe = () => {
     
     return (
     <>     
-         <p>A 3rd year software engineering student and wannabe linguist <br />
+         <p>A 3rd year software engineering student and linguist <br />
            
             
 
@@ -25,12 +25,12 @@ const AboutMe = () => {
           <li><a className={`${classes.aStyle}`} href="https://github.com/Noercy">✩ Github</a></li>
 
         </ul>
-
+{ /* 
         <div className={classes.flexBox}> 
           WIP site badge for the moment
           <a href="https://noercy.moe/"><img className={classes.siteBadge} src="/stream.png"></img></a>
         </div>
-       
+  */}
 
     </>
     )
