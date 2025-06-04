@@ -1,6 +1,5 @@
 import classes from  './aboutMe.module.css'
 
-
 const AboutMe = () => {
     
     return (

@@ -1,18 +1,18 @@
 import './App.css'
-import styles from './main-style.module.css'
-import Nav from './Nav'
-import BottomNav from './bottomNav'
-import Home from './content/home'
-import AnimatedTitle from './content/animatedTitle'
+import styles from './components/main-style.module.css'
+import Nav from './components/Nav'
+import BottomNav from './components/bottomNav'
+import Home from './components/home'
+import AnimatedTitle from './components/animatedTitle'
 // import MoveableWindow from './moveableWindow'
-import LastPlayedSong from './lastPlayedSong'
+import LastPlayedSong from './components/lastPlayedSong'
 
-import AboutMe from './content/aboutMe'
+import AboutMe from './components/aboutMe'
 
 import { useState, useEffect } from 'react';
-import Projects from './content/projects'
-import ChangeLog from './content/changeLog'
-import Collection from './content/collection'
+import Projects from './components/projects'
+import ChangeLog from './components/changeLog'
+import Collection from './components/collection'
 import CollectionScreen from './content/collectionScreen'
 
 
@@ -31,8 +31,6 @@ function App() {
   const [nextTitle, setNextTitle] = useState<string>('');
   const [isAnimating, setIsAnimating] = useState(false);
   const [showNewComponent] = useState(false);
-
-
 
   useEffect(() => {
     if (isAnimating) {
@@ -87,42 +85,33 @@ const navClick = (content: ContentType) => {
 };
 
   return (
-    
-      
       <div className={styles.Box}>
         {!showNewComponent ? (
           <>
-          <div className={`${styles.sideNav} ${isAnimating ? styles.hidden : ''}`}>
-        <Nav />
-        <BottomNav onNavClick={navClick}  />
+        <div className={`${styles.sideNav} ${isAnimating ? styles.hidden : ''}`}>
+          <Nav />
+          <BottomNav onNavClick={navClick}  />
         </div>
-
-
+        
         <div className={`${styles.mainContent} ${isAnimating ? styles.hidden : ''}`}>
           <h1><span className={styles.blinkClass}>{'>'}</span> <AnimatedTitle text={title} nextTitle={nextTitle} setTitle={setTitle} /></h1>
           <div className={styles.mainContentSize}>
             {renderContent()}
           </div>
-          
          {/*<ChatApp />*/} 
-        
-          
         </div>
+
           {/* <MoveableWindow />*/} 
+
       <div className={styles.rightNav}> 
-        
         <LastPlayedSong />
-    
       </div>
-      
-      
-     
-    </>
+
+          </>
         ) : (
           <CollectionScreen />
         )}
-        </div>
-   
+      </div>
   )
 }
 

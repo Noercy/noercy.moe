@@ -1,7 +1,6 @@
-import styles from './chat.module.css'
+import styles from '../components/chat.module.css'
 import { useEffect } from 'react';
-import Nav from '../Nav'; 
-
+import Nav from '../components/Nav'; 
 
 const CollectionScreen: React.FC = () => {
     

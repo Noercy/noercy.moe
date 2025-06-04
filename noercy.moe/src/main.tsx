@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import MainProjectView from './main/content/projectsFolder/mainProjectView.tsx'
 import ConnectDots from './main/content/projectsFolder/connectDots/connectDotsPage.tsx';
 import CollectionScreen from './main/content/collectionScreen.tsx';
+import Mapguy from './main/content/projectsFolder/Map/map.tsx';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: '/connectDots',
     element: <ConnectDots />
+  },
+  {
+    path: '/map',
+    element: <Mapguy/>
   }
 ])
 

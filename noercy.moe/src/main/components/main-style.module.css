@@ -1,8 +1,3 @@
-body {
-    width: 900px;
-    margin: auto;
-    margin-top: 10vw;
-}
 h1 {
     margin: 0;
 }
@@ -71,13 +66,6 @@ h1 {
         opacity: 1;
     }
 }
-
-
-canvas {
-    border: 1px solid white;
-    margin: 20px auto;
-  }
-
 
 .asciiWindow {
     width: 200px;
