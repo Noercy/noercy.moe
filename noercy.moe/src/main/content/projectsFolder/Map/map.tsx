@@ -3,7 +3,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import Styles from "./map.module.css"
 import { useEffect } from 'react';
 
-const API_KEY = import.meta.env.VITE_LAST_FM_API_KEY;
+const API_KEY = import.meta.env.VITE_MAPTILES;
 
 const Mapguy = () => {
 
