@@ -8,6 +8,7 @@ import ConnectDots from './main/content/projectsFolder/connectDots/connectDotsPa
 import CollectionScreen from './main/content/collectionScreen.tsx';
 import Mapguy from './main/content/projectsFolder/Map/map.tsx';
 
+
 const router = createBrowserRouter([
   {
     path: '/',

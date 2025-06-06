@@ -1,4 +1,5 @@
 import './App.css'
+import { Analytics } from '@vercel/analytics/next';
 import styles from './components/main-style.module.css'
 import Nav from './components/Nav'
 import BottomNav from './components/bottomNav'
@@ -111,7 +112,9 @@ const navClick = (content: ContentType) => {
         ) : (
           <CollectionScreen />
         )}
+        <Analytics />
       </div>
+      
   )
 }
 
